@@ -2,16 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>San Fierro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h2>Login</h2>
-    <form>
-        <label for="Username">Email</label>
-        <input type="text" id="Username" name="Username"><br><br>
-        <label for="userPassword">Password:</label>
-        <input type="password" id="userPassword" name="userPassword"><br><br>
-        <input type="submit" value="Login">
-    </form>
+    <section class="bg-blue-100 min-h-screen py-40">
+        <div class="container mx-auto">
+            <div class="flex w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
+                <div class="w-1/2 bg-cover bg-[url(https://64.media.tumblr.com/10324ba897e52c88d67169c48bee389c/baca5555cbe18ca3-b8/s1280x1920/06e28ee83fdee4336d61dcb1025b662749765f9c.jpg)]">
+                <h2></h2>
+                </div>
+                <div class="w-1/2 py-16 px-12">
+                  <h2 class="text-3xl bottom-4 font-serif">Login</h2>
+                  <form action="#" class="mt-9">
+                   <div class="mt-5 font-semibold">
+                    <ion-icon name="mail"></ion-icon>
+                    <label class="text-left">Email</label>
+                    <input type="email" required class="border border-gray-400 py-1 w-full">
+                    </div>
+                    <div class="mt-5 font-semibold">
+                    <ion-icon name="document-lock"></ion-icon>
+                    <label>Password</label>
+                    <input type="password" required class="border border-gray-400 py-1 w-full">
+                    </div>
+                    <div class="mt-5 font-semibold">
+                    <label class="inline-block"><input type="checkbox">Remember me</label>
+                    <a href="#" class="ml-8 text-blue-700 hover:underline">Forget password?</a>
+                    </div>
+                    <button type="submit" class=" rounded bg-sky-500 py-1 w-full my-5 text-center text-white font-semibold hover:bg-sky-400">Login</button>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+</html>
